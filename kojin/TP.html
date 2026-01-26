@@ -6,6 +6,7 @@
     <title>株式会社早池峰設備工業</title>
     <link rel="stylesheet" href="./css/TP.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="./js/TP.js" defer></script>
 </head>
 <body>
 
@@ -31,12 +32,42 @@
         </div>
         
         <nav class="global-nav">
-            <ul>
-                <li><a href="#">水回り<br>緊急トラブル</a></li>
-                <li><a href="#">水回り<br>設備交換</a></li>
-                <li><a href="#area">対応エリア</a></li>
-                <li><a href="#voice">お客様の声</a></li>
-                <li><a href="#">早池峰設備工業<br>について</a></li>
+            <ul class="nav-list">
+                <li class="nav-item js-hover-menu">
+                    <span class="nav-link">水回り<br>緊急トラブル ▼</span>
+                    
+                    <div class="mega-menu mega-menu--trouble">
+                        <div class="menu-header header-gray">緊急トラブル　サービス内容一覧</div>
+                        
+                        <div class="menu-content">
+                            <a href="#" class="menu-item"><span class="menu-icon"></span>漏水調査・修理</a>
+                            <a href="#" class="menu-item"><span class="menu-icon"></span>トイレ・台所等・詰り修理</a>
+                            <a href="#" class="menu-item"><span class="menu-icon"></span>水道管凍結修理</a>
+                            <a href="#" class="menu-item"><span class="menu-icon"></span>井戸ポンプ修理</a>
+                            <a href="#" class="menu-item"><span class="menu-icon"></span>給排水配管替工事</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item js-hover-menu">
+                    <span class="nav-link">水回り<br>設備交換 ▼</span>
+                    
+                    <div class="mega-menu mega-menu--equip">
+                        <div class="menu-header header-brown">水回り設備交換　サービス内容一覧</div>
+                        
+                        <div class="menu-content">
+                            <a href="#" class="menu-item"><span class="menu-icon"></span>浴室・台所等　混合栓交換</a>
+                            <a href="#" class="menu-item"><span class="menu-icon"></span>洗面・化粧台交換</a>
+                            <a href="#" class="menu-item"><span class="menu-icon"></span>トイレ交換</a>
+                            <a href="#" class="menu-item"><span class="menu-icon"></span>給湯機の交換</a>
+                            <a href="#" class="menu-item"><span class="menu-icon"></span>井戸ポンプ交換</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item"><a href="#area" class="nav-link">対応エリア</a></li>
+                <li class="nav-item"><a href="#voice" class="nav-link">お客様の声</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">早池峰設備工業<br>について</a></li>
             </ul>
         </nav>
     </header>
@@ -184,6 +215,22 @@
                 </div>
             </div>
         </div>
+
+        <div class="sticky-footer">
+        <div class="footer-buttons">
+            <a href="tel:019-600-0000" class="footer-btn">
+                <i class="fa-solid fa-phone"></i> 019-600-0000
+            </a>
+            
+            <a href="/contact" class="footer-btn">
+                お問い合わせ
+            </a>
+            
+            <a href="#area" class="footer-btn">
+                対応エリア
+            </a>
+        </div>
+    </div>
     </section>
 
     <footer>
