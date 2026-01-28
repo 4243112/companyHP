@@ -462,6 +462,9 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .footer-info {
@@ -697,13 +700,13 @@ footer {
 /* 個別の幅調整 */
 .mega-menu--trouble {
     left: -150px; /* 左にずらす */
-    width: 1300px;
+    width: 1280px;
     
 }
 
 .mega-menu--equip {
     left: -350px; /* 左にずらす */
-    width: 1300px;
+    width: 1280px;
     
 }
 
