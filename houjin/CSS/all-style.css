@@ -187,7 +187,7 @@ header {
 
 .hero-title {
     color: #FFFAEF;
-    font-size: 45px;
+    font-size: 56px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
     margin-bottom: 30px;
     font-weight: bold;
@@ -215,7 +215,7 @@ header {
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
     font-weight: bold;
     color: #555;
-    font-size: 18px;
+    font-size: 23px;
 }
 
 .hero-btn-text {
@@ -223,11 +223,11 @@ header {
     flex-direction: column;
     align-items: flex-start;
     line-height: 1.1;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .hero-tel {
-    font-size: 20px;
+    font-size: 25px;
     color: #333;
 }
 
@@ -250,7 +250,7 @@ header {
 }
 
 .section-title-simple {
-    font-size: 26px;
+    font-size: 33px;
     color: #555;
     background: #FDFCF5;
     padding: 0 20px;

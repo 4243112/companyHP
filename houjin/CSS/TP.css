@@ -187,7 +187,7 @@ header {
 
 .hero-title {
     color: #FFFAEF;
-    font-size: 45px;
+    font-size: 56px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
     margin-bottom: 30px;
     font-weight: bold;
@@ -215,7 +215,7 @@ header {
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
     font-weight: bold;
     color: #555;
-    font-size: 18px;
+    font-size: 23px;
 }
 
 .hero-btn-text {
@@ -223,11 +223,11 @@ header {
     flex-direction: column;
     align-items: flex-start;
     line-height: 1.1;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .hero-tel {
-    font-size: 20px;
+    font-size: 25px;
     color: #333;
 }
 
@@ -238,15 +238,15 @@ header {
 
 .section-title {
     text-align: center;
-    font-size: 28px;
+    font-size: 35px;
     color: #444;
     margin-bottom: 50px;
     font-weight: bold;
 }
 
 .section-title span {
-    color: var(--primary-green);
-    border-bottom: 2px solid var(--primary-green);
+    color: #A1CDA8;
+    border-bottom: 2px solid #A1CDA8;
     padding-bottom: 2px;
 }
 
@@ -272,21 +272,21 @@ header {
 }
 
 .reason-text h3 {
-    color: var(--primary-green);
-    font-size: 24px;
-    border-bottom: 1px solid var(--primary-green);
+    color: #A1CDA8;
+    font-size: 30px;
+    border-bottom: 1px solid #A1CDA8;
     padding-bottom: 5px;
     margin-bottom: 15px;
     display: inline-block;
 }
 
 .reason-text .num {
-    font-size: 28px;
+    font-size: 35px;
     margin-right: 5px;
 }
 
 .reason-text p {
-    font-size: 16px;
+    font-size: 20px;
     color: #555;
     line-height: 1.7;
 }
@@ -301,7 +301,7 @@ header {
 }
 
 .section-title-simple {
-    font-size: 26px;
+    font-size: 33px;
     color: #555;
     background: #FDFCF5;
     padding: 0 20px;
@@ -341,7 +341,7 @@ header {
     border-radius: 8px;
     position: relative;
     width: 70%;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .tag {
@@ -352,12 +352,12 @@ header {
     color: #fff;
     padding: 2px 15px;
     border-radius: 12px;
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .voice-bubble h4 {
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .user-icon {
@@ -368,7 +368,7 @@ header {
     justify-content: center;
     align-items: center;
     color: #fff;
-    font-size: 40px;
+    font-size: 50px;
     flex-shrink: 0;
 }
 
@@ -397,13 +397,13 @@ header {
 }
 
 .area-content h3 {
-    font-size: 18px;
+    font-size: 23px;
     margin-bottom: 10px;
     color: #444;
 }
 
 .map-note {
-    font-size: 12px;
+    font-size: 15px;
     margin-bottom: 10px;
     color: #666;
 }
@@ -426,7 +426,7 @@ header {
 }
 
 .area-group h4 {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 8px;
     color: #333;
@@ -440,18 +440,18 @@ header {
 
 .area-links a {
     color: #2E86DE;
-    font-size: 14px;
+    font-size: 18px;
     text-decoration: underline;
 }
 
 /* =============== フッター =============== */
 footer {
-    background-color: var(--footer-bg);
-    color: #fff;
+    background-color: #627264;
+    color: #FFF7E8;
     margin-top: 60px;
     position: relative;
-    border-top: 5px solid #6BA54E;
-    padding-bottom: 80px;
+    border-top: 5px solid #627264;
+    padding-bottom: 20px;
 }
 
 .footer-top {
@@ -494,7 +494,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--accent-green);
+    background-color: #90EE90;
     color: #fff;
     width: 400px;
     height: 250px;
@@ -531,7 +531,7 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 15px 30px;
-    color: #fff;
+    color: #FFF7E8;
     font-size: 15px;
     text-align: center;
     font-weight: bold;
@@ -541,7 +541,7 @@ footer {
     text-align: center;
     padding: 20px 0;
     font-size: 25px;
-    color: #ddd;
+    color: #FFF7E8;
 }
 
 /* ===== トップへ戻るボタン ===== */
@@ -722,7 +722,7 @@ footer {
 .menu-header {
     color: #fff;
     padding: 10px 20px;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: normal;
 }
 
@@ -749,7 +749,7 @@ footer {
     display: flex;
     align-items: center;
     color: #000;
-    font-size: 14px;
+    font-size: 18px;
     text-decoration: none;
 }
 
@@ -765,4 +765,91 @@ footer {
     border-width: 5px 0 5px 8px; /* 三角形の形状 */
     border-color: transparent transparent transparent #4caf50; /* 緑色 */
     margin-right: 10px;
+}
+
+/* --- 弊社について (About) --- */
+.about {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #FDFCF5; /* 背景色継続 */
+}
+
+/* タイトル横の線 */
+.section-title-lines {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.section-title-lines::before,
+.section-title-lines::after {
+    content: "";
+    height: 1px;
+    width: 100px; /* 線の長さ */
+    background-color: #999;
+    margin: 0 20px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.about-img-placeholder {
+    width: 80%;
+    height: 400px;
+    background-color: #dcdcdc; /* 画像のグレー部分 */
+    overflow: hidden;
+}
+
+.about-img-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-text {
+    width: 80%;
+    text-align: left;
+    font-size: 19px;
+    line-height: 1.8;
+}
+
+/* --- 導入事例 (Scenarios - Green Section) --- */
+.scenarios {
+    background-color: #9ecca4; /* 緑色の背景 */
+    padding: 50px 0;
+    text-align: center;
+    color: #333;
+}
+
+.scenarios-title {
+    font-size: 23px;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+.scenarios-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4列 */
+    gap: 20px;
+}
+
+.scenario-item img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border: 1px solid #fff; /* 画像枠線 */
+    margin-bottom: 10px;
+}
+
+.scenario-item p {
+    font-size: 15px;
+    color: #333;
+    margin: 0;
 }
