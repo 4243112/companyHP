@@ -1,1 +1,239 @@
-@charset "utf-8";
+@charset "UTF-8";
+
+/* service.htmlの専用スタイル（TP.cssの基本設定を継承） */
+
+/* コンテンツ幅の制限 */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* --- コンテンツセクション共通 --- */
+.section {
+  padding: 40px 20px;
+  margin: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* 事例画像 */
+.case-image-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.case-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  background-color: #ddd;
+  display: block;
+}
+
+.case-label {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 5px 20px;
+  font-weight: bold;
+  color: #555;
+  font-size: 15px;
+}
+
+/* 説明文 */
+.description {
+  font-size: 16px;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+/* --- 「リフォームのタイミング」ボックス --- */
+.timing-box {
+  background-color: #4b8b3b; /* 深めの緑 */
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.timing-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.timing-content {
+  background-color: #fff;
+  color: #333;
+  padding: 20px;
+  text-align: left;
+  font-size: 15px;
+}
+
+.timing-list-title {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #555;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 2px;
+}
+.timing-list-title:first-child {
+  margin-top: 0;
+}
+
+.check-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+.check-list li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 5px;
+}
+
+/* チェックボックスアイコン */
+.check-list li::before {
+  content: '☑';
+  position: absolute;
+  left: 0;
+  color: #4b8b3b;
+  font-weight: bold;
+}
+
+/* --- 施工の流れ (左右2列レイアウト) --- */
+.flow-section {
+  padding: 40px 20px;
+  margin: 40px 0;
+  background-color: #f9f9f9;
+}
+
+.flow-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #333;
+}
+
+/* 左右2列コンテナ */
+.flow-container {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 0;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+/* 左側: STEP ボックス */
+.flow-steps {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  height: 100%;
+}
+
+.step-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+  color: #fff;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+}
+
+.step-box:last-child {
+  border-bottom: none;
+}
+
+.step-1 { background-color: #66cc66; }
+.step-2 { background-color: #5cb85c; }
+.step-3 { background-color: #4cae4c; }
+
+.step-number {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.step-text {
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+/* 矢印 */
+.arrow-down {
+  position: absolute;
+  bottom: -25px;
+  width: 3px;
+  height: 25px;
+  background-color: #666;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.arrow-down::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 8px solid #666;
+}
+
+/* 右側: 詳細情報表 */
+.flow-details {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #ddd;
+}
+
+.flow-row {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  border-bottom: 1px solid #ddd;
+}
+
+.flow-row:last-child {
+  border-bottom: none;
+}
+
+.flow-label {
+  background-color: #f5f5f5;
+  padding: 15px;
+  font-weight: bold;
+  color: #333;
+  font-size: 15px;
+  border-right: 1px solid #ddd;
+}
+
+.flow-desc {
+  padding: 15px;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* 行の背景色（STEPごと） */
+.flow-row-step1 .flow-label {
+  background-color: #d4f1d4;
+}
+
+.flow-row-step2 .flow-label {
+  background-color: #c1e1c1;
+}
+
+.flow-row-step3 .flow-label {
+  background-color: #a8d5a8;
+}
