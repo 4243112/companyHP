@@ -27,11 +27,11 @@
     z-index: 1;
 }
 
-
 .inquiry-section {
     max-width: 900px;
     margin: 0 auto;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
 }
@@ -99,6 +99,17 @@
     border-radius: 8px;
     border: 1px solid #ddd;
     width: 100%;
+}
+
+.confirm-text{
+    margin-bottom: 30px;
+}
+
+.confirm-box {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background: #fff;
 }
 
 .form-group {
@@ -179,3 +190,95 @@
 .form-submit:active {
     background-color: #5a7e48;
 }
+
+.form-error {
+  color: #e60000;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.required {
+  color: #e60000;
+  font-size: 12px;
+  margin-left: 3px;
+}
+
+
+/* 内容確認画面 */
+.confirm-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+/* 共通スタイル */
+.confirm-buttons button {
+    height: 44px;
+    min-width: 170px;
+    padding: 0 24px;
+    border-radius: 999px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+/* 戻るボタン */
+.btn-back {
+    background-color: #bebebe;
+    color: #333;
+}
+
+.btn-back:hover {
+    background-color: #a9a9a9;
+    color: #111;
+}
+
+/* 送信ボタン */
+.form-submit {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* ★文字を中央 */
+    background-color: #86b56b;
+    color: #fff;
+}
+
+.form-submit:hover {
+    background-color: #78a95f;
+}
+
+/* input風の枠 */
+.confirm-value {
+    width: 100%;
+    min-height: 35px;
+    padding: 10px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+/* textarea風 */
+#confirm-message {
+    min-height: 160px;
+    align-items: flex-start;
+    white-space: pre-wrap;
+    line-height: 1.6;
+}
+
+@media (max-width: 480px) {
+    .confirm-buttons {
+        flex-direction: column;
+    }
+}
+
