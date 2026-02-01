@@ -260,11 +260,12 @@ header {
 
 /* =============== フッター =============== */
 footer {
-    background-color: var(--footer-bg);
-    color: #fff;
+    background-color: #627264;
+    color: #FFF7E8;
     margin-top: 60px;
     position: relative;
-    border-top: 5px solid #6BA54E;
+    border-top: 5px solid #627264;
+    padding-bottom: 20px;
 }
 
 .footer-top {
@@ -341,7 +342,7 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 15px 30px;
-    color: #fff;
+    color: #FFF7E8;
     font-size: 15px;
     text-align: center;
     font-weight: bold;
