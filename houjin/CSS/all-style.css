@@ -265,6 +265,12 @@ footer {
     margin-top: 60px;
     position: relative;
     border-top: 5px solid #627264;;
+    background-color: #627264;
+    color: #FFF7E8;
+    margin-top: 60px;
+    position: relative;
+    border-top: 5px solid #627264;
+    padding-bottom: 20px;
 }
 
 .footer-top {

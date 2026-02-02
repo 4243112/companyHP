@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+/* ============================
+   実績ページ 見出しデザイン
+============================ */
+
+.works-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #333;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* 左右の線 */
+.section-title::before,
+.section-title::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background-color: #000000;
+}
+
+/* スマホ対応 */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 25px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .section-title::before,
+    .section-title::after {
+        display: none;
+    }
+}
+
+/* ============================
+   実績表
+============================ */
+.achievement-table-wrapper {
+    overflow-x: auto;
+}
+
+.achievement-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    font-size: 14px;
+    table-layout: fixed; /* 列幅を均等に */
+    border: 2px solid #999; /* 外枠を太く */
+}
+
+/* セル共通 */
+.achievement-table th,
+.achievement-table td {
+    border: 1px solid #999;
+    padding: 14px 10px;
+    text-align: center;
+    vertical-align: middle;
+    height: 60px;
+    word-break: break-word;
+}
+
+/* 見出しセル */
+.achievement-table thead th {
+    background-color: #dfe8da;
+    font-weight: bold;
+}
+
+/* 年度列（左端） */
+.achievement-table tbody th {
+    background-color: #eef3ea;
+    font-weight: bold;
+    width: 80px;
+}
+
+/* 行ホバー */
+.achievement-table tbody tr:hover {
+    background-color: #f5f9f3;
+}

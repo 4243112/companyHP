@@ -356,8 +356,8 @@ footer {
 
 /* ===== トップへ戻るボタン ===== */
 .scroll-top {
-    position: absolute;
-    bottom: 20px;
+    position: fixed;
+    bottom: 80px;
     right: 20px;
     background-color: #355E2D;
     color: #fff;
@@ -369,6 +369,7 @@ footer {
     align-items: center;
     border: 2px solid #fff;
     font-size: 20px;
+    z-index: 10000;
 }
 
 /* --- レスポンシブ対応 (スマホ向け) --- */
@@ -391,4 +392,187 @@ footer {
     .footer-container { flex-direction: column; gap: 30px; }
     .footer-nav { flex-wrap: wrap; }
     .footer-nav li { width: 50%; border: none; }
+}
+
+/* 固定フッター全体の枠 */
+.sticky-footer {
+    position: fixed;   /* 画面に固定 */
+    bottom: 0;         /* 下端に配置 */
+    left: 0;
+    width: 100%;       /* 横幅いっぱい */
+    background-color: rgba(90, 140, 81, 0.8); /* 緑色に半透明 */
+    padding: 10px 0;   /* 上下の余白 */
+    z-index: 9999;     /* 他の要素より手前に表示 */
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* ほんのり影をつける */
+}
+
+/* ボタンを横並びにするコンテナ */
+.footer-buttons {
+    display: flex;             /* 横並びにする */
+    justify-content: center;   /* 中央寄せ */
+    gap: 10px;                 /* ボタン同士の間隔 */
+    max-width: 1000px;         /* PCで広がりすぎないように制限 */
+    margin: 0 auto;            /* 中央配置 */
+    padding: 0 10px;           /* 左右の余白 */
+}
+
+/* 各ボタンのデザイン */
+.footer-btn {
+    background-color: rgba(255, 251, 240, 1); /* クリーム色に半透明 */
+    color: #5a8c51;            /* 文字色（背景の緑と同じにする） */
+    text-decoration: none;     /* 下線を消す */
+    padding: 12px 10px;        /* ボタン内の余白 */
+    border-radius: 4px;        /* 角を少し丸くする（画像に合わせて調整可） */
+    flex: 1;                   /* 3つのボタンを均等な幅にする */
+    text-align: center;        /* 文字を中央揃え */
+    font-weight: bold;         /* 文字を太く */
+    font-size: 14px;           /* 文字サイズ */
+    display: flex;             /* アイコンと文字の位置調整用 */
+    align-items: center;       /* 上下中央揃え */
+    justify-content: center;   /* 左右中央揃え */
+    gap: 8px;                  /* アイコンと文字の間隔 */
+    transition: opacity 0.3s;  /* ホバー時の動き */
+}
+
+/* マウスを乗せた時の動き（PC用） */
+.footer-btn:hover {
+    opacity: 0.8;
+}
+
+/* スマホ向けの微調整（画面幅が狭い時） */
+@media (max-width: 600px) {
+    .footer-btn {
+        font-size: 12px;       /* 文字を少し小さく */
+        padding: 10px 5px;     /* 余白を詰める */
+    }
+}
+
+/* --- メガメニューのスタイル --- */
+.nav-list {
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.nav-item {
+    position: relative; /* 子要素（メニュー）の基準位置にする */
+    cursor: pointer;
+    flex: 1;
+    border-right: 1px solid #E0E0E0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-item:first-child {
+    border-left: 1px solid #E0E0E0;
+}
+
+/* ナビゲーションのリンク部分 */
+.nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px 0;
+    color: #8E9E48; /* ナビの文字色 */
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 1.4;
+    text-decoration: none;
+    transition: background 0.3s;
+    width: 100%;
+}
+
+.nav-item:hover .nav-link {
+    background-color: rgba(142, 158, 72, 0.1);
+}
+
+/* メガメニュー（共通） */
+.mega-menu {
+    /* 初期状態は非表示 */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+
+    /* 位置（サイズは個別クラスで制御） */
+    position: absolute;
+    top: 100%; /* 親要素の真下に配置 */
+    left: 0;
+    background-color: #e0e0e0; /* 薄いグレー背景 */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 1000;
+    border-top: 1px solid #ccc;
+}
+
+/* 個別の幅調整 */
+.mega-menu--trouble {
+    left: -150px; /* 左にずらす */
+    width: 1280px;
+    
+}
+
+.mega-menu--equip {
+    left: -350px; /* 左にずらす */
+    width: 1280px;
+    
+}
+
+/* JavaScriptでこのクラスがつくと表示される */
+.mega-menu.is-active,
+.nav-item.is-active .mega-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* メニュー上部の濃いグレーの帯 */
+.menu-header {
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.header-gray {
+    background-color: #999; /* 緊急トラブル帯 */
+}
+
+.header-brown {
+    background-color: #a0957d; /* 設備交換帯 */
+}
+
+/* メニュー項目のリストコンテナ */
+.menu-content {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; /* 折り返しを許可 */
+    gap: 15px 20px; /* 行と列の間隔 */
+}
+
+/* 各メニュー項目 */
+.menu-item {
+    width: 30%; /* 3列並びのようなイメージ */
+    min-width: 220px;
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.menu-item:hover {
+    text-decoration: underline;
+}
+
+/* 緑色の三角アイコン (CSSで作る) */
+.menu-icon {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 8px; /* 三角形の形状 */
+    border-color: transparent transparent transparent #4caf50; /* 緑色 */
+    margin-right: 10px;
 }
