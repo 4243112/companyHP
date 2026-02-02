@@ -1,0 +1,302 @@
+/* ベーススタイル */
+body {
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+body:not(footer) {
+    background-color: #fffbf0; /* 背景のクリーム色 */
+    color: #4a4a4a;
+    line-height: 1.8;
+}
+
+/* レイアウトコンテナ */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fffbf0;
+    min-height: auto;
+}
+
+/* フッターのcontainerは除外 */
+footer .container,
+footer .footer-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: transparent;
+    min-height: auto;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* 左サイドバー（木の画像エリア） */
+.sidebar {
+    width: 20%;
+    background-color: #2d7a6e;
+    background-image: url('../img/スクリーンショット\ 2025-12-22\ 102530.png');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+    align-self: flex-start;
+    margin-top: 230px;
+    height: 1330px;
+}
+
+/* メインコンテンツエリア */
+.main-content {
+    width: 80%;
+    padding: 60px 50px;
+    box-sizing: border-box;
+}
+
+/* ヘッダー：企業概要 */
+h1.page-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 60px;
+    color: #333;
+    font-weight: normal;
+    letter-spacing: 2px;    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1.page-title::before,
+h1.page-title::after {
+    content: "";
+    height: 1px;
+    width: 100px;
+    background-color: #999;
+    margin: 0 20px;}
+
+/* セクション共通 */
+.section {
+    margin-bottom: 80px;
+}
+
+/* 緑色のアクセント文字 */
+.accent {
+    color: #2d7a6e;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 0;
+    font-weight: normal;
+    color: #333;
+    line-height: 1.6;
+}
+
+footer h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+    padding-bottom: 5px;
+    display: inline-block;
+    color: #fff;
+    font-weight: normal;
+    line-height: 1.6;
+}
+
+footer .footer-info,
+footer .footer-info div {
+    color: #fff;
+}
+
+footer address {
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.subtitle-en {
+    font-size: 17px;
+    color: #888;
+    margin-bottom: 15px;
+    display: block;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: #d0d0d0;
+    margin: 20px 0 30px 0;
+    border: none;
+}
+
+/* テキストブロック */
+.text-block {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.9;
+    color: #555;
+}
+
+/* 画像スタイル */
+.content-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0;
+}
+
+/* 最初のセクション：テキスト＋画像（縦配置） */
+.section:first-of-type {
+    text-align: center;
+}
+
+.section:first-of-type .content-image {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 20px auto 0;
+}
+
+/* 2つ目のセクション（テキスト左、画像右） */
+.flex-section {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.flex-text {
+    flex: 1;
+    font-size: 18px;
+    line-height: 1.9;
+    color: #555;
+}
+
+.flex-image {
+    flex: 0 0 auto;
+    width: 280px;
+}
+
+.flex-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* 会社情報テーブルエリア */
+.company-info {
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 17px;
+    font-family: "Yu Gothic", "YuGothic", sans-serif;
+    text-align: left;
+    max-width: 600px;
+}
+
+.info-row {
+    display: flex;
+    margin-bottom: 16px;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.info-label {
+    width: 130px;
+    font-weight: bold;
+    text-align: left;
+    color: #666;
+}
+
+.info-value {
+    width: auto;
+    text-align: left;
+    min-width: 200px;
+}
+
+.employee-list {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.employee-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 3px;
+    gap: 30px;
+}
+
+/* 沿革リスト */
+.history-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.history-item {
+    display: flex;
+    margin-bottom: 8px;
+    gap: 20px;
+}
+
+.history-date {
+    width: 110px;
+    flex-shrink: 0;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* レスポンシブ対応（スマホなど） */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        height: 200px;
+    }
+    .main-content {
+        width: 100%;
+        padding: 30px 20px;
+    }
+    .flex-section {
+        flex-direction: column;
+    }
+    .flex-image {
+        width: 100%;
+    }
+    .info-row {
+        flex-direction: column;
+        text-align: left;
+    }
+    .info-label {
+        text-align: left;
+        width: auto;
+    }
+}
+
+/* ページトップへ戻るボタン */
+.scroll-top {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #355E2D;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+    font-size: 20px;
+}
