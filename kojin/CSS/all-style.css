@@ -264,7 +264,7 @@ footer {
     color: #fff;
     margin-top: 60px;
     position: relative;
-    border-top: 5px solid #6BA54E;
+    border-top: 5px solid var(--footer-bg);
 }
 
 .footer-top {

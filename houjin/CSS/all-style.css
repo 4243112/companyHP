@@ -260,6 +260,11 @@ header {
 
 /* =============== フッター =============== */
 footer {
+    background-color: #627264;;
+    color: #FFF7E8;;
+    margin-top: 60px;
+    position: relative;
+    border-top: 5px solid #627264;;
     background-color: #627264;
     color: #FFF7E8;
     margin-top: 60px;
@@ -352,7 +357,7 @@ footer {
     text-align: center;
     padding: 20px 0;
     font-size: 25px;
-    color: #ddd;
+    color:#FFF7E8;
 }
 
 /* ===== トップへ戻るボタン ===== */
