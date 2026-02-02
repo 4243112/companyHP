@@ -362,7 +362,7 @@ footer {
 
 /* ===== トップへ戻るボタン ===== */
 .scroll-top {
-    position: absolute;
+    position: fixed; /* ← ここが最重要 */
     bottom: 20px;
     right: 20px;
     background-color: #355E2D;
@@ -375,6 +375,8 @@ footer {
     align-items: center;
     border: 2px solid #fff;
     font-size: 20px;
+    z-index: 9999; /* ← 念のため追加 */
+    cursor: pointer; /* ← UX向上 */
 }
 
 /* --- レスポンシブ対応 (スマホ向け) --- */
