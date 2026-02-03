@@ -632,4 +632,51 @@
         .footer-buttons { flex-direction: column; }
         .footer-btn { width: 100%; }
         .map-large-btn { width: 100%; height: 200px; }
+
+        .trouble-item {
+            flex-direction: column;
+        }
+
+        .trouble-content {
+            width: 100%;
+        }
+
+        .trouble-item h3 {
+            font-size: 18px;
+        }
+
+        .trouble-item p {
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .header-top {
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .logo-area h1 {
+            font-size: 18px;
+        }
+
+        .nav-item {
+            width: 50%;
+        }
+
+        .trouble-section {
+            padding: 15px;
+        }
+
+        .trouble-item h3 {
+            font-size: 16px;
+        }
+
+        .trouble-item p {
+            font-size: 12px;
+        }
+
+        .footer-nav li {
+            width: 100%;
+        }
     }
