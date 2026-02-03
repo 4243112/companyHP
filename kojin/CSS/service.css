@@ -237,3 +237,77 @@
 .flow-row-step3 .flow-label {
   background-color: #a8d5a8;
 }
+
+/* =============== レスポンシブデザイン =============== */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .section {
+    padding: 30px 15px;
+  }
+
+  .case-image {
+    height: 200px;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .service-card {
+    flex-direction: column;
+  }
+
+  .service-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .flow-container {
+    flex-direction: column;
+  }
+
+  .flow-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .flow-label {
+    width: auto;
+    min-width: 80px;
+  }
+
+  .flow-content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 20px 10px;
+  }
+
+  .case-image {
+    height: 150px;
+  }
+
+  .flow-row {
+    gap: 5px;
+  }
+
+  .flow-label {
+    font-size: 12px;
+    padding: 8px 5px;
+  }
+
+  .flow-content h4 {
+    font-size: 14px;
+  }
+
+  .flow-content p {
+    font-size: 12px;
+  }
+}

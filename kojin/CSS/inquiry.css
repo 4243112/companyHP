@@ -276,9 +276,83 @@
     line-height: 1.6;
 }
 
+@media (max-width: 768px) {
+    .inquiry-tab {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .inquiry-tab.active {
+        border-bottom: 3px solid #6B9457;
+    }
+
+    .form-group {
+        padding: 20px;
+    }
+
+    .form-group label {
+        font-size: 14px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .required-mark {
+        font-size: 12px;
+    }
+
+    .error-message {
+        font-size: 12px;
+    }
+}
+
 @media (max-width: 480px) {
+    .form-container {
+        padding: 20px 0;
+    }
+
+    .inquiry-tab {
+        font-size: 11px;
+        padding: 8px;
+    }
+
+    .form-group {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .form-group label {
+        font-size: 13px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+    }
+
+    .form-submit,
+    .btn-back {
+        width: 100%;
+        padding: 15px;
+    }
+
     .confirm-buttons {
         flex-direction: column;
+    }
+
+    .confirm-buttons button {
+        width: 100%;
+        padding: 15px;
     }
 }
 
